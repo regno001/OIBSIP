@@ -9,6 +9,7 @@ height: 50px;
 }
 .btn-go:hover{
   background-color: rgb(28, 116, 28);
+margin:20px 40px;
 }
 .lang{
 position: absolute;
@@ -38,4 +39,5 @@ gap: 10px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
 }
