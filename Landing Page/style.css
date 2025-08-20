@@ -1,43 +1,102 @@
-*{
-  font-family: system-ui;
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.btn-go{
-  background-color: rgb(80, 202, 80);
-width: 200px;
-height: 50px;
-  border-radius: 30px;
-}
-.btn-go:hover{
-  background-color: rgb(28, 116, 28);
-margin:20px 40px;
-}
-.lang{
-position: absolute;
-right: 10px;
-border-radius: 20px;
-}
-.Body{
-  margin: 100px ;
 
-}
-.feature {
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
   display: flex;
-  gap: 10px; /* spacing between images */
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.feature img {
-display: flex;
-gap: 10px;
+/* Header */
+header {
+  background: #0f172a; /* dark navy */
+  padding: 1rem 2rem;
 }
-.infinity{
-  height: 40px;
-}
-.header{
-  width: 100%;          /* or any width you want */
-  height: 400px;        /* or any height you want */
-  background-image: url('/StockImages/homepage-pingzhu-hero-bg-opt-v2-3ce3022343c7ad918545a6a2e01f36b5.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#lang {
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* Hero Section */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  color: #fff;
+}
+
+.main h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.main h5 {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.Btn-Go {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #ef4444; /* red */
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.Btn-Go:hover {
+  background: #dc2626;
+}
+
+/* Footer */
+.footer {
+  background: #0f172a;
+  color: #bbb;
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer p {
+  margin-bottom: 0.5rem;
+}
+
+.footer a {
+  color: #3b82f6;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
