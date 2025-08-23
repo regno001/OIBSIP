@@ -1,19 +1,16 @@
-// config.js
 const mongoose = require("mongoose");
-
-// Connect to MongoDB
 mongoose.connect(
   "mongodb+srv://testuser:test1234@cofo.tj6nadm.mongodb.net/imagify?retryWrites=true&w=majority"
 )
 .then(() => console.log("Database connected successfully"))
 .catch(err => console.error("Database connection error:", err));
 
-// Create Schema
+
 const LoginSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true,
-    unique: true, // prevent duplicate usernames
+    unique: true, 
   },
   password: {
     type: String,
@@ -21,7 +18,8 @@ const LoginSchema = new mongoose.Schema({
   },
 });
 
-// Create collection
+
 const UserCollection = mongoose.model("users", LoginSchema);
 
 module.exports = UserCollection;
+
