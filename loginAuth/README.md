@@ -15,3 +15,6 @@ Express.js – Server framework
 MongoDB – Database for storing user data
 Mongoose – MongoDB object modeling
 bcrypt – Password hashing
+
+Link to preview
+https://drive.google.com/file/d/1BcANOHpYVuHGDzqJDoEiEZt9VPmv-wVD/view?usp=drive_link
