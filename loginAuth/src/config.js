@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 mongoose.connect(
-  "mongodb+srv://testuser:test1234@cofo.tj6nadm.mongodb.net/imagify?retryWrites=true&w=majority"
+  "your Db Link"
 )
 .then(() => console.log("Database connected successfully"))
 .catch(err => console.error("Database connection error:", err));
@@ -22,4 +22,5 @@ const LoginSchema = new mongoose.Schema({
 const UserCollection = mongoose.model("users", LoginSchema);
 
 module.exports = UserCollection;
+
 
